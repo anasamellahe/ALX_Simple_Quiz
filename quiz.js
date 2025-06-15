@@ -8,7 +8,8 @@ function checkAnswer()
         feedback.textContent = "You must select an answer.";
         return;
     }
-    if (userAnswer.value == correctAnswer)
+    userAnswer = userAnswer.value;
+    if (userAnswer === correctAnswer)
         feedback.textContent  = "Correct! Well done.";
     else
         feedback.textContent  = "That's incorrect. Try again!";
